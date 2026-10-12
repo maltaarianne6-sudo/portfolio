@@ -1,13 +1,13 @@
-
 <!DOCTYPE html>
 <html lang="fr">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mon Portfolio</title>
+    <meta name="description" content="Portfolio d'Arianne Malta, étudiante en Bachelor Data & IA à HETIC : projets Python, applications web créées avec des outils d'IA, automatisation et design.">
+    <title>Arianne MALTA | Portfolio Data &amp; IA</title>
     <link rel="stylesheet" href="style.css">
     <link rel="shortcut icon" href="img/icons8-portfolio-64.png" type="image/x-icon">
-  </head>
+</head>
 <body>
     <!-- ===== HEADER / NAVIGATION ===== -->
     <header>
@@ -33,9 +33,12 @@
                 Exploratrice de données en devenir
             </h1>
             <p>
-                Je suis étudiante (bachelor 1) en Data et IA à HETIC (Haute Ecole de la Technologie de l'Information et de la Communication),passionnée par le design, les domaines de l'intelligence articielle et de la data.
+                Étudiante en 2<sup>e</sup> année de Bachelor Data &amp; IA à HETIC (Haute École de la Technologie de l'Information et de la Communication), passionnée par la data, l'intelligence artificielle et le design. À la recherche d'une alternance.
             </p>
-            <a href="#projects" class="cta-button">Découvrir mes projets</a>
+            <div class="hero-buttons">
+                <a href="#projects" class="cta-button">Découvrir mes projets</a>
+                <a href="CV_Arianne_Malta.pdf" target="_blank" rel="noopener" class="cta-button cta-secondary">Télécharger mon CV</a>
+            </div>
         </div>
     </section>
 
@@ -43,25 +46,19 @@
     <section class="about" id="about">
         <div class="container">
             <h2 class="section-title">À propos de moi</h2>
-            
+
             <div class="about-content">
                 <div class="about-image">
-                    <img src="img/me.jpeg" alt="Photo de profil">
+                    <img src="img/me.jpeg" alt="Portrait d'Arianne Malta">
                 </div>
 
                 <div class="about-text">
-                    
-                    <h2>
-                        <!-- TODO MARDI HTML : Changez ce titre (ex: "Qui suis-je ?") -->
-                        Qui suis-je ?
-                    </h2>
+                    <h2>Qui suis-je ?</h2>
                     <p>
-                        <!-- TODO MARDI HTML : Écrivez un paragraphe sur vous -->
-                        Je suis une jeune étudiante en Data et IA, avec moins d'un an d'expérience dans les domaines de l'infographie et du commerce. J'aime faire du design graphique et explorer les fonctionnalités des IA.
+                        Je suis étudiante en Data et IA à HETIC, avec moins d'un an d'expérience dans les domaines de l'infographie et du commerce. Cette expérience client m'a appris à comprendre un besoin avant de proposer une solution, et c'est ainsi que je construis mes projets.
                     </p>
                     <p>
-                        <!-- TODO MARDI HTML : Écrivez un deuxième paragraphe sur vous -->
-                        Mon objectif est d'acquérir une certaine autonomie informatique. Je travaille avec les logiciels de la gamme Adobe, Figma, manus, 
+                        Mon objectif est d'acquérir une solide autonomie technique. Je programme en Python (Pandas, Matplotlib, Seaborn) et en HTML/CSS, je conçois des maquettes avec Figma et la gamme Adobe, et j'explore des outils d'IA (Manus, Google AI Studio, Gemini Pro, Kimi) pour prototyper des applications et automatiser des tâches avec Make.
                     </p>
                 </div>
             </div>
@@ -72,25 +69,42 @@
     <section class="skills" id="skills">
         <div class="container">
             <h2 class="section-title">Mes Compétences</h2>
-            
+
             <div class="skills-grid">
                 <div class="skill-card">
-                    <div class="skill-icon"><img src="img/icons8-paintbrush-48.png" alt=""></div>
-                    <h3>Conception de visuels graphiques</h3>
-                    <p>[Conception, impression, et mise en page d'affiches publicitaires, cartes de visites, flyers, banderoles, etc...]</p>
+                    <div class="skill-icon" aria-hidden="true">📊</div>
+                    <h3>Data &amp; Python</h3>
+                    <p>Nettoyage, analyse exploratoire et visualisation de données avec Pandas, NumPy, Matplotlib et Seaborn.</p>
                 </div>
 
                 <div class="skill-card">
-                    <div class="skill-icon"><img src="img/icons8-group-48.png" alt=""></div>
-                    <h3>Maîtrise des relations avec les clients</h3>
-                    <p>[Connaissance de l'acceuil et apport de conseils sur certains choix des clients.]</p>
+                    <div class="skill-icon" aria-hidden="true">🤖</div>
+                    <h3>IA générative &amp; prototypage</h3>
+                    <p>Prompt engineering, tests comparatifs de modèles (Gemini Pro, Kimi, Manus) et création d'applications web avec des outils d'IA.</p>
                 </div>
 
                 <div class="skill-card">
-                    <div class="skill-icon"><img src="img/icons8-video-trimming-48.png"
-                        alt=""></div>
-                    <h3>Montage photos et vidéos</h3>
-                    <p>[Retouche ,montage, agrandissement photos et montages vidéos. ]</p>
+                    <div class="skill-icon" aria-hidden="true">⚙️</div>
+                    <h3>Automatisation</h3>
+                    <p>Workflows no-code avec Make pour relier un site Webflow, Airtable et Gmail.</p>
+                </div>
+
+                <div class="skill-card">
+                    <div class="skill-icon" aria-hidden="true">🎨</div>
+                    <h3>Design &amp; maquettes</h3>
+                    <p>User flow, wireframes, design system et maquettes responsives sous Figma. Conception de visuels (affiches, flyers, cartes de visite) avec la gamme Adobe.</p>
+                </div>
+
+                <div class="skill-card">
+                    <div class="skill-icon" aria-hidden="true">🗂️</div>
+                    <h3>Gestion de projet</h3>
+                    <p>Cheffe de projet d'une équipe de 6 personnes : répartition et suivi des tâches, rapport et présentation finale.</p>
+                </div>
+
+                <div class="skill-card">
+                    <div class="skill-icon" aria-hidden="true">🤝</div>
+                    <h3>Relation client</h3>
+                    <p>Accueil, écoute du besoin et conseil auprès des clients.</p>
                 </div>
             </div>
         </div>
@@ -100,63 +114,80 @@
     <section class="projects" id="projects">
         <div class="container">
             <h2 class="section-title">Mes Projets</h2>
-            
+
             <div class="projects-grid">
                 <div class="project-card">
-                    <div class="project-image">[Projet 1]</div>
+                    <div class="project-image">Data · Python</div>
                     <div class="project-content">
-                        <h3>Locker game</h3>
-                        <p>Locker game est un mini-jeu de grattage digital où le joueur choisit un casier parmi 9, le gratte et découvre instantanément s’il a gagné</p>
-                        <a href="https://lockergame-kmxoup7w.manus.space" target="_blank" class="project-card"
-                        a href="#" class="project-link">Voir le projet →</a>
+                        <h3>Analyse de la popularité d'animés</h3>
+                        <p>Nettoyage d'un jeu de données de 73 lignes et 18 variables (3,5 % de valeurs manquantes supprimées), analyse exploratoire et visualisations pour identifier les facteurs de succès d'une œuvre et prédire sa note globale.</p>
+                        <p class="project-tools">Outils : Python, Pandas, Matplotlib, Seaborn, Jupyter Notebook</p>
+                        <a href="https://github.com/maltaarianne6-sudo/First-Data-Project" target="_blank" rel="noopener" class="project-link">Voir le projet sur GitHub →</a>
                     </div>
                 </div>
 
                 <div class="project-card">
-                    <div class="project-image">[Projet 2]</div>
+                    <div class="project-image">Jeu web</div>
                     <div class="project-content">
-                        <h3>FaceQuest</h3>
-                        <p>Facequest est un jeu futuriste où il est question de chercher un mot afin de débloquer l’option de selfie pour trouver ses sosies dans le monde</p>
-                        <a href="https://facequest-bfawmdb2.manus.space" target="_blank" class="project-card"
-                        a href="#" class="project-link">Voir le projet →</a>
+                        <h3>Locker game</h3>
+                        <p>Mini-jeu de grattage digital : le joueur choisit un casier parmi 9, le gratte et découvre instantanément s'il a gagné.</p>
+                        <p class="project-tools">Outil : Manus</p>
+                        <a href="https://lockergame-kmxoup7w.manus.space" target="_blank" rel="noopener" class="project-link">Voir le projet →</a>
                     </div>
                 </div>
-                            <div class="project-card">
-                    <div class="project-image">[Projet 3]</div>
+
+                <div class="project-card">
+                    <div class="project-image">Jeu web &amp; IA</div>
                     <div class="project-content">
-                        <h3>AI Studio App</h3>
-                        <p>il s'agit là d'un site de vente d'articles en ligne</p>
-                        <a href="https://ai.studio/apps/drive/1rLZeiCD_tBJSehP3vSDGvgRNY-VzxO5q?fullscreenApplet=true" target="_blank" class="project-card"
-                        a href="#" class="project-link">Voir le projet →</a>
+                        <h3>FaceQuest</h3>
+                        <p>Jeu futuriste : le joueur cherche un mot pour débloquer l'option selfie et trouver ses sosies dans le monde.</p>
+                        <p class="project-tools">Outil : Manus</p>
+                        <a href="https://facequest-bfawmdb2.manus.space" target="_blank" rel="noopener" class="project-link">Voir le projet →</a>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-image">Application web</div>
+                    <div class="project-content">
+                        <h3>Boutique en ligne (AI Studio App)</h3>
+                        <p>Site de vente d'articles en ligne créé avec Google AI Studio.</p>
+                        <p class="project-tools">Outil : Google AI Studio</p>
+                        <a href="https://ai.studio/apps/drive/1rLZeiCD_tBJSehP3vSDGvgRNY-VzxO5q?fullscreenApplet=true" target="_blank" rel="noopener" class="project-link">Voir le projet →</a>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-image">Automatisation</div>
+                    <div class="project-content">
+                        <h3>Workflow Make pour la marque WAKE</h3>
+                        <p>Automatisation reliant un site Webflow à Airtable et Gmail : traitement des formulaires d'inscription et envoi automatique d'un guide PDF par e-mail aux inscrits.</p>
+                        <p class="project-tools">Outils : Make, Webflow, Airtable, Gmail</p>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-image">Design &amp; UX</div>
+                    <div class="project-content">
+                        <h3>Jeu digital pour Foot Locker</h3>
+                        <p>Concept de jeu interactif pour renforcer l'engagement client : user flow, wireframes, design system et maquettes responsives mobile et desktop. Intégration en HTML et CSS en cours.</p>
+                        <p class="project-tools">Outils : Figma, HTML, CSS</p>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- ===== CONTACT SECTION / FORM ===== -->
+    <!-- ===== CONTACT SECTION ===== -->
     <section class="contact" id="contact">
         <div class="container">
-            <h2>Me Contacter</h2>
-            
-            <form class="contact-form">
-                <div class="form-group">
-                    <label for="name">Votre nom & prénom</label>
-                    <input type="text" id="name" name="name">
-                </div>
+            <h2>Me contacter</h2>
+            <p class="contact-intro">Je recherche une alternance en Data &amp; IA. Écrivez-moi, je réponds rapidement.</p>
 
-                <div class="form-group">
-                    <label for="email">Votre adresse mail</label>
-                    <input type="email" id="email" name="email">
-                </div>
-
-                <div class="form-group">
-                    <label for="message">Votre message</label>
-                    <textarea id="message" name="message"></textarea>
-                </div>
-
-                <button type="submit" class="submit-button">Envoyer</button>
-            </form>
+            <div class="contact-links">
+                <a href="mailto:maltaarianne6@gmail.com" class="cta-button">maltaarianne6@gmail.com</a>
+                <a href="https://www.linkedin.com/in/arianne-malta-383b19387/" target="_blank" rel="noopener" class="cta-button cta-secondary">LinkedIn</a>
+                <a href="https://github.com/maltaarianne6-sudo" target="_blank" rel="noopener" class="cta-button cta-secondary">GitHub</a>
+            </div>
         </div>
     </section>
 
@@ -171,16 +202,16 @@
 
                 <div class="footer-section">
                     <h3>Liens rapides</h3>
-                    <p><a href="#about" style="color: #0071e3; text-decoration: none;">À propos</a></p>
-                    <p><a href="#projects" style="color: #0071e3; text-decoration: none;">Projets</a></p>
-                    <p><a href="#contact" style="color: #0071e3; text-decoration: none;">Contact</a></p>
+                    <p><a href="#about" class="footer-link">À propos</a></p>
+                    <p><a href="#skills" class="footer-link">Compétences</a></p>
+                    <p><a href="#projects" class="footer-link">Projets</a></p>
+                    <p><a href="#contact" class="footer-link">Contact</a></p>
                 </div>
 
                 <div class="footer-section">
                     <h3>Suivez-moi</h3>
                     <div class="social-links">
-                        <a href="https://www.linkedin.com/in/arianne-malta-383b19387/" target="_blank" class="project-card"
-                        a href="#"><img src="img/icons8-linkedin-48.png" alt=""></a>
+                        <a href="https://www.linkedin.com/in/arianne-malta-383b19387/" target="_blank" rel="noopener"><img src="img/icons8-linkedin-48.png" alt="LinkedIn d'Arianne Malta"></a>
                     </div>
                 </div>
             </div>

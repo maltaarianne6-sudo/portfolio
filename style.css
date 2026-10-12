@@ -5,6 +5,10 @@
      box-sizing: border-box;
  }
 
+ html {
+     scroll-behavior: smooth;
+ }
+
  /* ===== STYLES GLOBAUX (Design Apple) ===== */
  body {
      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif;
@@ -42,7 +46,6 @@
      display: flex;
      justify-content: space-between;
      align-items: center;
-     /* TODO MARDI CSS : Vérifier que c'est du flexbox correct */
  }
 
  .logo {
@@ -55,7 +58,6 @@
      display: flex;
      list-style: none;
      gap: 40px;
-     /* TODO MARDI CSS : Vérifier que c'est du flexbox avec gap */
  }
 
  .nav-links a {
@@ -64,10 +66,6 @@
      font-weight: 500;
      font-size: 1rem;
      transition: opacity 0.3s;
- }
-
- a:hover {
-     font-size: 16px;
  }
 
  .nav-links a:hover {
@@ -144,7 +142,6 @@
      display: flex;
      gap: 60px;
      align-items: center;
-     /* TODO MARDI CSS : Vérifier que c'est du flexbox avec gap */
  }
 
  .about-image {
@@ -156,19 +153,11 @@
      width: 100%;
      border-radius: 100px;
      display: block;
-     font-weight: 100;
-
+     object-fit: cover;
  }
 
  .about-text {
      flex: 1;
- }
-
- .img {
-     font-weight: 20px;
-     font-size: 20px;
-     object-fit: cover;
-
  }
 
  .about-text h2 {
@@ -203,7 +192,6 @@
      margin-top: 60px;
      justify-content: space-around;
      flex-wrap: wrap;
-     /* TODO MARDI CSS : Vérifier que c'est du flexbox avec gap */
  }
 
  .skill-card {
@@ -251,7 +239,6 @@
      gap: 40px;
      margin-top: 60px;
      flex-direction: column;
-     /* TODO MARDI CSS : Vérifier la structure (colonnes empilées) */
  }
 
  .project-card {
@@ -268,7 +255,7 @@
      transform: translateY(-4px);
  }
 
- .project-card:nth-child(2) {
+ .project-card:nth-child(even) {
      flex-direction: row-reverse;
  }
 
@@ -341,7 +328,6 @@
      display: flex;
      flex-direction: column;
      gap: 24px;
-     /* TODO MARDI CSS : Vérifier que c'est du flexbox column */
  }
 
  .form-group {
@@ -398,7 +384,8 @@
  footer {
      background-image: url(img/wwwatercolor1.webp);
      backdrop-filter: blur(80px);
-     op color: #44444b;
+     color: #44444b;
+     background-color: #eaf6ff;
      padding: 0px 0;
      text-align: center;
      border-top: 1px solid #44444b;
@@ -443,55 +430,77 @@
 
  .footer-bottom {
      font-size: 0.85rem;
-     color: #a1a1a6;
+     color: #44444b;
      padding-top: 40px;
      border-top: 1px solid #e5e5e7;
  }
 
- /* ===== MEDIA QUERIES (RESPONSIVE) ===== */
 
- /* Tablette (768px et moins) */
- @media (max-width: 768px) {
-     .nav-links {
-         flex-direction: column;
-         gap: 20px;
-     }
+ /* ===== AJOUTS ===== */
+ .skill-card {
+     flex: 1 1 280px;
+     max-width: calc(33.333% - 27px);
+ }
 
-     /* TODO MARDI CSS : Hero - réduire h1 à 2.5rem */
-     .hero h1 {
-         font-size: 2.5rem;
-         padding: 40px 0;
-     }
+ .contact {
+     min-height: auto;
+ }
 
-     /* TODO MARDI CSS : About - passer en colonne */
-     .about-content {
-         flex-direction: column;
-         gap: 40px;
-     }
+ .hero-buttons {
+     display: flex;
+     gap: 16px;
+     justify-content: center;
+     flex-wrap: wrap;
+ }
 
-     /* TODO MARDI CSS : Projects - adapter pour mobile */
-     .project-card {
-         flex-direction: column !important;
-         gap: 20px;
-     }
+ .cta-secondary {
+     background-color: white;
+     color: #0071e3;
+     border: 2px solid #0071e3;
+ }
 
-     .project-image {
-         width: 100%;
-     }
+ .cta-secondary:hover {
+     background-color: #eaf3ff;
+ }
 
-     /* TODO MARDI CSS : Section padding réduit */
-     .about,
-     .skills,
-     .projects,
-     .contact {
-         padding: 80px 0;
-     }
+ .project-tools {
+     font-size: 0.95rem !important;
+     font-weight: 600;
+     color: #03035f !important;
+ }
+
+ .contact-intro {
+     text-align: center;
+     font-size: 1.2rem;
+     margin: -30px auto 40px;
+     max-width: 600px;
+ }
+
+ .contact-links {
+     display: flex;
+     gap: 16px;
+     justify-content: center;
+     flex-wrap: wrap;
+ }
+
+ .footer-link {
+     color: #0071e3;
+     text-decoration: none;
+ }
+
+ .social-links img {
+     width: 32px;
+     height: 32px;
  }
 
  /* ===== MEDIA QUERIES (RESPONSIVE) ===== */
 
  /* Tablette (768px et moins) */
  @media (max-width: 768px) {
+     .skill-card {
+         max-width: 100%;
+     }
+
      .nav-links {
          flex-direction: column;
          gap: 20px;
@@ -564,6 +573,7 @@
 
      .skill-card {
          min-width: 100%;
+         max-width: 100%;
      }
 
      .project-content h3 {
